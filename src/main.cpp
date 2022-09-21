@@ -1,4 +1,4 @@
-#include "tree.cpp"
+#include "tree.hpp"
 
 int main()
 {
