@@ -38,6 +38,7 @@ void printTree(Tree *root, int arr[], int top);
 void transferToQueue(unordered_map<string, float> words, int countWords);
 void printFrequencies(unordered_map<string, float> &wordFreq);
 void printEncode();
+void getTextToVector(string &myText, vector<string> *vWord);
 void createBinaryFile();
 
 Tree::Tree(pair<string, float> data)
@@ -194,7 +195,7 @@ void createBinaryFile(vector<string> vWord)
             myFile.write(text.c_str(), (text.size()));
         }
     }
-
+    cout << "Binary file created." << endl;
     myFile.close();
 }
 
