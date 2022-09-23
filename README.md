@@ -4,6 +4,18 @@
 ![Make](https://img.shields.io/badge/Compilacao-Make-orange)
 ![VSCode](https://img.shields.io/badge/IDE-VSCode-informational)
 
+## Índice
+
+__1.__ [Introdução](#introdução)
+
+__2.__ [Metodologia](#metodologia)
+
+__3.__ [Menu](#menu)
+
+__4.__ [Discussão dos Resultados](#discussão-dos-resultados)
+
+__5.__ [Compilação e Execução](#compilação-e-execução)
+
 ## Introdução
 
 <p align="justify">
@@ -33,7 +45,7 @@ __6.__ [Observar e discutir sobre o ganho ou perda de espaço.](#discussão-dos-
 
 ![Scrennshot](src/img/menuPrincipal.jpg)
 
-- Ao executar o programa terá as seguintes opções:
+- Ao executar o programa surgirão as seguintes opções:
     - `1` Imprime a lista de palavras do texto e suas frequências normalizadas.
     - `2` Imprime a árvore de huffman (em lista) com seus valores associados em binário.
     - `3` Cria o arquivo binário test.dat no diretório /src .
