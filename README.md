@@ -43,7 +43,7 @@ __6.__ [Observar e discutir sobre o ganho ou perda de espaço.](#discussão-dos-
 
 ## Menu
 
-![Scrennshot](src/img/menuPrincipal.jpg)
+![Scrennshot](img/menuPrincipal.jpg)
 
 - Ao executar o programa surgirão as seguintes opções:
     - `1` Imprime a lista de palavras do texto e suas frequências normalizadas.
@@ -57,21 +57,21 @@ __6.__ [Observar e discutir sobre o ganho ou perda de espaço.](#discussão-dos-
         
         (Palavra, Frequencia Normalizada)
 
-        ![Scrennshot](src/img/1.jpg)
+        ![Scrennshot](img/1.jpg)
 
     - ### [2] Print Huffman tree.
 
         (Palavra, Valor Binário)
 
-        ![Scrennshot](src/img/2.jpg)
+        ![Scrennshot](img/2.jpg)
 
     - ### [3] Create binary file.
 
-        ![Scrennshot](src/img/3.jpg)
+        ![Scrennshot](img/3.jpg)
 
     - ### [9] Exit.
 
-        ![Scrennshot](src/img/4.jpg)
+        ![Scrennshot](img/4.jpg)
 
 
 ## Discussão dos Resultados
@@ -80,7 +80,7 @@ __6.__ [Observar e discutir sobre o ganho ou perda de espaço.](#discussão-dos-
     Através da análise do resultado da compressão foi possível identificar um aumento no tamanho do arquivo. Esse comportamento, contrário ao esperado, se deve devido ao código de Huffman verdadeiro (diferente do proposto) utilizar de caracteres como chaves para a construção da árvore e de seus respectivos valores binários. A quantidade de caracteres é muito inferior a quantidade de palavras possíveis dentro de um texto, fazendo com que os valores binários cresçam de tal maneira (devido a quantidade de palavras e o código não ter prefixos repetidos) que o tamanho do arquivo cresça.
 </p>
 
-![Scrennshot](src/img/huffman.jpg)
+![Scrennshot](img/huffman.jpg)
 
 ## Compilação e Execução
 
