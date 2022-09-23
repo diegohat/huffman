@@ -22,7 +22,7 @@ int main()
     int countWords = normalizeFrequencies(words);
     transferToQueue(words, countWords);
     // printEncode();
-    //createBinaryFile(vWord);
+    // createBinaryFile(vWord);
 
     int menu = 0;
 
