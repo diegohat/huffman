@@ -29,15 +29,15 @@ __5.__ [Compilação e Execução](#compilação-e-execução)
 
 ### Etapas do projeto
 
-__1.__ [Contabilizar a recorrência de cada palavra no arquivo;](https://github.com/diegohat/huffman/blob/main/src/tree.hpp#L80)
+__1.__ [Contabilizar a recorrência de cada palavra no arquivo;](https://github.com/diegohat/huffman/blob/main/src/tree.cpp#L41)
 
-__2.__ [Normalizar a contabilização;](https://github.com/diegohat/huffman/blob/main/src/tree.hpp#L88)
+__2.__ [Normalizar a contabilização;](https://github.com/diegohat/huffman/blob/main/src/tree.cpp#L49)
 
-__3.__ [Montar a árvore com as regras apresentadas por Huffman;](https://github.com/diegohat/huffman/blob/main/src/tree.hpp#L134)
+__3.__ [Montar a árvore com as regras apresentadas por Huffman;](https://github.com/diegohat/huffman/blob/main/src/tree.cpp#L95)
 
-__4.__ [Trocar as palavras pela codificação binária;](https://github.com/diegohat/huffman/blob/main/src/tree.hpp#L101)
+__4.__ [Trocar as palavras pela codificação binária;](https://github.com/diegohat/huffman/blob/main/src/tree.cpp#L62)
 
-__5.__ [Salvar o arquivo em formato binário;](https://github.com/diegohat/huffman/blob/main/src/tree.hpp#L177)
+__5.__ [Salvar o arquivo em formato binário;](https://github.com/diegohat/huffman/blob/main/src/tree.cpp#L138)
 
 __6.__ [Observar e discutir sobre o ganho ou perda de espaço.](#discussão-dos-resultados)
 
