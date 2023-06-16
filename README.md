@@ -1,4 +1,4 @@
-# Trabalho desenvolvido para a disciplina de AED II sobre a Codificação de Huffman
+# Projeto sobre a Codificação de Huffman
 
 ![C++](https://img.shields.io/badge/Linguagem-C++-green.svg)
 ![Make](https://img.shields.io/badge/Compilacao-Make-orange)
@@ -19,7 +19,7 @@ __5.__ [Compilação e Execução](#compilação-e-execução)
 ## Introdução
 
 <p align="justify">
-    Este trabalho consiste no desenvolvimento de uma aplicação em terminal utilizando a linguagem C++. Através de estrutura de dados foi proposto a criação de um método de compressão de dados fazendo uso da codificação de Huffman. A codificação de Huffman é um método de compressão que usa as probabilidades de ocorrência dos símbolos no conjunto de dados a ser comprimido para determinar códigos de tamanho variável para cada símbolo.    
+    Este projeto consiste no desenvolvimento de uma aplicação em terminal utilizando a linguagem C++. Através de estrutura de dados foi proposto a criação de um método de compressão de dados fazendo uso da codificação de Huffman. A codificação de Huffman é um método de compressão que usa as probabilidades de ocorrência dos símbolos no conjunto de dados a ser comprimido para determinar códigos de tamanho variável para cada símbolo.    
 </p>
 
 ## Metodologia
