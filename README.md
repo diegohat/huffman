@@ -1,4 +1,4 @@
-# Trabalho desenvolvido para a disciplina de AED II sobre o Código de Huffman
+# Trabalho desenvolvido para a disciplina de AED II sobre a Codificação de Huffman
 
 ![C++](https://img.shields.io/badge/Linguagem-C++-green.svg)
 ![Make](https://img.shields.io/badge/Compilacao-Make-orange)
