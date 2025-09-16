@@ -12,7 +12,7 @@ int main()
     }
     else
     {
-        cout << "Não foi possível abrir o arquivo txt." << endl;
+        cout << "Unable to open the text file." << endl;
     }
 
     removePunctuation(myText);
@@ -54,7 +54,7 @@ int main()
             break;
 
         case 9:
-            cout << "Shuting down..." << endl;
+            cout << "Shutting down..." << endl;
             break;
 
         default:

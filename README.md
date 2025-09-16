@@ -1,91 +1,91 @@
-# Projeto sobre a Codificação de Huffman
+# Huffman Coding Project
 
-![C++](https://img.shields.io/badge/Linguagem-C++-green.svg)
-![Make](https://img.shields.io/badge/Compilacao-Make-orange)
+![C++](https://img.shields.io/badge/Language-C++-green.svg)
+![Make](https://img.shields.io/badge/Compilation-Make-orange)
 ![VSCode](https://img.shields.io/badge/IDE-VSCode-informational)
 
-## Índice
+## Index
 
-__1.__ [Introdução](#introdução)
+__1.__ [Introduction](#introduction)
 
-__2.__ [Metodologia](#metodologia)
+__2.__ [Methodology](#methodology)
 
 __3.__ [Menu](#menu)
 
-__4.__ [Discussão dos Resultados](#discussão-dos-resultados)
+__4.__ [Results Discussion](#results-discussion)
 
-__5.__ [Compilação e Execução](#compilação-e-execução)
+__5.__ [Compilation and Execution](#compilation-and-execution)
 
-## Introdução
+## Introduction
 
 <p align="justify">
-    Este projeto consiste no desenvolvimento de uma aplicação em terminal utilizando a linguagem C++. Através de estrutura de dados foi proposto a criação de um método de compressão de dados fazendo uso da codificação de Huffman. A codificação de Huffman é um método de compressão que usa as probabilidades de ocorrência dos símbolos no conjunto de dados a ser comprimido para determinar códigos de tamanho variável para cada símbolo.    
+    This project consists of developing a terminal application using the C++ language. Through data structures, it was proposed to create a data compression method using Huffman coding. Huffman coding is a compression method that uses the occurrence probabilities of symbols in the data set to be compressed to determine variable-length codes for each symbol.    
 </p>
 
-## Metodologia
+## Methodology
 <p align="justify">
-    Para o uso da codificação, foram utilizadas estruturas em árvore, filas, listas e tabelas hash. Uma fila de prioridade foi criada para lidar com a reordenação da floresta de árvores que estava contida em uma lista de árvores. Abaixo segue as etapas do projeto e seus respectivos códigos.
+    For the use of coding, tree structures, queues, lists and hash tables were used. A priority queue was created to handle the reordering of the forest of trees that was contained in a list of trees. Below are the project steps and their respective codes.
 </p>
 
-### Etapas do projeto
+### Project Steps
 
-__1.__ [Contabilizar a recorrência de cada palavra no arquivo;](https://github.com/diegohat/huffman/blob/main/src/tree.cpp#L41)
+__1.__ [Count the recurrence of each word in the file;](https://github.com/diegohat/huffman/blob/main/src/tree.cpp#L41)
 
-__2.__ [Normalizar a contabilização;](https://github.com/diegohat/huffman/blob/main/src/tree.cpp#L49)
+__2.__ [Normalize the count;](https://github.com/diegohat/huffman/blob/main/src/tree.cpp#L49)
 
-__3.__ [Montar a árvore com as regras apresentadas por Huffman;](https://github.com/diegohat/huffman/blob/main/src/tree.cpp#L95)
+__3.__ [Build the tree with the rules presented by Huffman;](https://github.com/diegohat/huffman/blob/main/src/tree.cpp#L95)
 
-__4.__ [Trocar as palavras pela codificação binária;](https://github.com/diegohat/huffman/blob/main/src/tree.cpp#L62)
+__4.__ [Replace words with binary encoding;](https://github.com/diegohat/huffman/blob/main/src/tree.cpp#L62)
 
-__5.__ [Salvar o arquivo em formato binário;](https://github.com/diegohat/huffman/blob/main/src/tree.cpp#L138)
+__5.__ [Save the file in binary format;](https://github.com/diegohat/huffman/blob/main/src/tree.cpp#L138)
 
-__6.__ [Observar e discutir sobre o ganho ou perda de espaço.](#discussão-dos-resultados)
+__6.__ [Observe and discuss space gain or loss.](#results-discussion)
 
 ## Menu
 
-![Scrennshot](img/menuPrincipal.jpg)
+![Screenshot](img/menuPrincipal.jpg)
 
-- Ao executar o programa surgirão as seguintes opções:
-    - `1` Imprime a lista de palavras do texto e suas frequências normalizadas.
-    - `2` Imprime a árvore de huffman (em lista) com seus valores associados em binário.
-    - `3` Cria o arquivo binário test.dat no diretório /src .
-    - `9` Finaliza o programa.
+- When executing the program, the following options will appear:
+    - `1` Prints the list of words from the text and their normalized frequencies.
+    - `2` Prints the Huffman tree (in list form) with their associated binary values.
+    - `3` Creates the binary file test.dat in the /src directory.
+    - `9` Ends the program.
 
-- Resultados esperados pela execução das opções:
+- Expected results from executing the options:
 
     - ### [1] Print word's frequencies.
         
-        (Palavra, Frequencia Normalizada)
+        (Word, Normalized Frequency)
 
-        ![Scrennshot](img/1.jpg)
+        ![Screenshot](img/1.jpg)
 
     - ### [2] Print Huffman tree.
 
-        (Palavra, Valor Binário)
+        (Word, Binary Value)
 
-        ![Scrennshot](img/2.jpg)
+        ![Screenshot](img/2.jpg)
 
     - ### [3] Create binary file.
 
-        ![Scrennshot](img/3.jpg)
+        ![Screenshot](img/3.jpg)
 
     - ### [9] Exit.
 
-        ![Scrennshot](img/4.jpg)
+        ![Screenshot](img/4.jpg)
 
 
-## Discussão dos Resultados
+## Results Discussion
 
 <p align="justify">
-    Através da análise do resultado da compressão foi possível identificar um aumento no tamanho do arquivo. Esse comportamento, contrário ao esperado, se deve devido ao código de Huffman verdadeiro (diferente do proposto) utilizar de caracteres como chaves para a construção da árvore e de seus respectivos valores binários. A quantidade de caracteres é muito inferior a quantidade de palavras possíveis dentro de um texto, fazendo com que os valores binários cresçam de tal maneira (devido a quantidade de palavras e o código não ter prefixos repetidos) que o tamanho do arquivo cresça.
+    Through the analysis of the compression result, it was possible to identify an increase in file size. This behavior, contrary to what was expected, is due to the fact that the true Huffman code (different from the proposed one) uses characters as keys for building the tree and their respective binary values. The number of characters is much lower than the number of possible words within a text, causing the binary values to grow in such a way (due to the number of words and the code having no repeated prefixes) that the file size increases.
 </p>
 
-![Scrennshot](img/huffman.jpg)
+![Screenshot](img/huffman.jpg)
 
-## Compilação e Execução
+## Compilation and Execution
 
-| Comando    | Função                                                                                  |
+| Command    | Function                                                                                  |
 | ---------- | --------------------------------------------------------------------------------------- |
-| make clean | Apaga a última compilação realizada contida na pasta build                              |
-| make       | Executa a compilação do programa utilizando o g++, e o resultado vai para a pasta build |
-| make run   | Executa o programa da pasta build após a realização da compilação                       |
+| make clean | Deletes the last compilation performed contained in the build folder                     |
+| make       | Executes the program compilation using g++, and the result goes to the build folder     |
+| make run   | Executes the program from the build folder after compilation is performed               |
